@@ -64,7 +64,7 @@
         compatible = "zmk,keymap";
 
         Base {
-            display-name = "Base",
+            display-name = "Base";
             bindings = <
 &lt 4 TAB  &kp Q  &kp W    &kp E     &kp R        &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &lt 2 S  &lt 1 D   &lt 4 F      &kp G      &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp RET
@@ -74,7 +74,7 @@
         };
 
         Symbols {
-            display-name = "Symbols",
+            display-name = "Symbols";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T         &kp AT     &kp LBRC       &kp RBRC          &kp MINUS  &kp EQUAL   &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G         &kp HASH   &kp LPAR       &kp RPAR          &kp STAR   &kp DOLLAR  &kp RET
@@ -84,7 +84,7 @@
         };
 
         Numpad {
-            display-name = "Numpad",
+            display-name = "Numpad";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T         &kp HASH   &kp N7  &kp N8    &kp N9  &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G         &kp STAR   &kp N4  &kp N5    &kp N6  &kp SEMI  &ctrlaltdelete
@@ -94,7 +94,7 @@
         };
 
         Mouse {
-            display-name = "Mouse",
+            display-name = "Mouse";
             bindings = <
 &trans  &trans          &mmv MOVE_UP    &mkp RCLK        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_NXT
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -104,7 +104,7 @@
         };
 
         Arrow {
-            display-name = "Arrows",
+            display-name = "Arrows";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
@@ -114,7 +114,7 @@
         };
 
         Debug {
-            display-name = "Debug",
+            display-name = "Debug";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E    &kp R    &kp T      &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
 &kp LCTRL  &kp A  &kp S  &kp D    &kp F    &kp G      &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
@@ -124,7 +124,7 @@
         };
 
         Function {
-            display-name = "Function",
+            display-name = "Function";
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans     &trans  &kp F7  &kp F8  &kp F9  &trans  &trans
 &trans  &trans  &trans  &trans   &trans   &trans     &trans  &kp F4  &kp F5  &kp F6  &trans  &trans
@@ -134,7 +134,7 @@
         };
 
         Code {
-            display-name = "Code",
+            display-name = "Code";
             bindings = <
 &lt 4 TAB  &kp Q  &kp W    &kp E         &kp R        &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &lt 2 S  &lt 1 D       &lt 4 F      &kp G      &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp RET
