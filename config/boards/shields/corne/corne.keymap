@@ -10,10 +10,7 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1600  // default: 600
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -45,7 +42,7 @@
         compatible = "zmk,combos";
 
         debug {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <13 14 15 16>;
         };
 
@@ -55,7 +52,7 @@
         };
 
         code {
-            bindings = <&to 7>;
+            bindings = <&to 6>;
             key-positions = <3 2 4 1>;
         };
     };
@@ -66,40 +63,30 @@
         Base {
             display-name = "Base";
             bindings = <
-&lt 4 TAB  &kp Q  &kp W    &kp E     &kp R        &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &lt 2 S  &lt 1 D   &lt 4 F      &kp G      &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z  &kp X    &kp C     &kp V        &kp B      &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                           &kp LGUI  &mo SYMBOLS  &F24Tap    &mo 6  &lt 3 SPACE  &kp RALT
+&kp TAB    &kp Q  &kp W    &kp E     &kp R         &kp T      &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &lt 2 S  &lt 1 D   &lt 3 F       &kp G      &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
+&kp LSHFT  &kp Z  &kp X    &kp C     &kp V         &kp B      &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+                           &kp LGUI  &kp LEFT_ALT  &F24Tap    &mo 5  &kp SPACE  &kp RALT
             >;
         };
 
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T         &kp AT     &kp LBRC       &kp RBRC          &kp MINUS  &kp EQUAL   &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G         &kp HASH   &kp LPAR       &kp RPAR          &kp STAR   &kp DOLLAR  &kp RET
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B         &kp GRAVE  &kp LBKT       &kp RBKT          &kp EXCL   &kp FSLH    &kp ESC
-                         &kp LGUI  &mo SYMBOLS  &mo NUMPAD    &kp SPACE  &kp LESS_THAN  &kp GREATER_THAN
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T    &kp AT     &kp LBRC       &kp RBRC          &kp MINUS  &kp EQUAL   &kp TILDE
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G    &kp HASH   &kp LPAR       &kp RPAR          &kp STAR   &kp DOLLAR  &kp PERCENT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp GRAVE  &kp LBKT       &kp RBKT          &kp EXCL   &kp CARET   &kp ESC
+                         &kp LGUI  &mo 1  &mo 2    &kp SPACE  &kp LESS_THAN  &kp GREATER_THAN
             >;
         };
 
         Numpad {
             display-name = "Numpad";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T         &kp HASH   &kp N7  &kp N8    &kp N9  &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G         &kp STAR   &kp N4  &kp N5    &kp N6  &kp SEMI  &ctrlaltdelete
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B         &kp GRAVE  &kp N1  &kp N2    &kp N3  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo SYMBOLS  &mo NUMPAD    &kp SPACE  &kp N0  &kp RALT
-            >;
-        };
-
-        Mouse {
-            display-name = "Mouse";
-            bindings = <
-&trans  &trans          &mmv MOVE_UP    &mkp RCLK        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_NXT
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                        &trans           &trans     &trans    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T    &kp HASH   &kp N7  &kp N8    &kp N9  &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G    &kp STAR   &kp N4  &kp N5    &kp N6  &kp SEMI  &ctrlaltdelete
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp GRAVE  &kp N1  &kp N2    &kp N3  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &mo 2    &kp SPACE  &kp N0  &kp RALT
             >;
         };
 
@@ -136,10 +123,10 @@
         Code {
             display-name = "Code";
             bindings = <
-&lt 4 TAB  &kp Q  &kp W    &kp E         &kp R        &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &lt 2 S  &lt 1 D       &lt 4 F      &kp G      &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp RET
-&kp LSHFT  &kp Z  &kp X    &kp C         &kp V        &kp B      &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                           &kp LEFT_ALT  &mo SYMBOLS  &F24Tap    &mo 6  &lt 3 SPACE  &kp RALT
+&lt 3 TAB  &kp Q  &kp W    &kp E         &kp R    &kp T      &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &lt 2 S  &lt 1 D       &lt 3 F  &kp G      &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp RET
+&kp LSHFT  &kp Z  &kp X    &kp C         &kp V    &kp B      &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+                           &kp LEFT_ALT  &mo 1    &F24Tap    &mo 5  &lt 0 SPACE  &kp RALT
             >;
         };
     };
