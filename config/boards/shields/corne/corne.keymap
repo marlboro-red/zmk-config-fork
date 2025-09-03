@@ -73,10 +73,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T    &kp AT     &kp LBRC       &kp RBRC          &kp MINUS  &kp EQUAL   &kp TILDE
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G    &kp HASH   &kp LPAR       &kp RPAR          &kp STAR   &kp DOLLAR  &kp PERCENT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp GRAVE  &kp LBKT       &kp RBKT          &kp EXCL   &kp CARET   &kp ESC
-                         &kp LGUI  &mo 1  &mo 2    &kp SPACE  &kp LESS_THAN  &kp GREATER_THAN
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T    &kp AT     &kp LBRC       &kp RBRC          &kp MINUS  &kp EQUAL      &kp TILDE
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G    &kp HASH   &kp LPAR       &kp RPAR          &kp STAR   &kp DOLLAR     &kp PERCENT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B    &kp GRAVE  &kp LBKT       &kp RBKT          &kp EXCL   &kp AMPERSAND  &kp ESC
+                         &kp LGUI  &mo 1  &mo 2    &kp PIPE   &kp LESS_THAN  &kp GREATER_THAN
             >;
         };
 
@@ -93,10 +93,10 @@
         Arrow {
             display-name = "Arrows";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans         &kp UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp LEFT       &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans         &trans    &trans           &trans  &trans
+                        &trans  &trans  &trans    &kp K_BACK  &kp K_FORWARD  &trans
             >;
         };
 
